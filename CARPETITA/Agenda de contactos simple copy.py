@@ -1,5 +1,4 @@
 # "Agenda de contactos simple"
-# Listas a utilizar
 iniciar_bucle = 0
 contactos = []
 def mostrar_menu():
