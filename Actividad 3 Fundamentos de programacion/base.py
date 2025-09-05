@@ -36,7 +36,7 @@ def consumo_gasto_total(sumatoria_consumo, sumatoria_costo):
         costo_mensual = fila[3] * fila[2] * 30
         sumatoria_consumo += consumo_mensual
         sumatoria_costo += costo_mensual
-        print("El consumo mensual de todos los dispositivos es de", sumatoria_consumo, "watts, y el costo total mensual de todos los dispositivos es de", sumatoria_costo, "pesos")
+    print("El consumo mensual de todos los dispositivos es de", sumatoria_consumo, "watts, y el costo total mensual de todos los dispositivos es de", sumatoria_costo, "pesos")
 
 
 num_dispositivos = int(input("¿Cuantos dispositivos registrara?\nResponde:"))
@@ -51,7 +51,7 @@ while iniciar != 0:
     elif opcion_menu == "2":
         gasto_consumo_mensual()
     elif opcion_menu == "3":
-        consumo_gasto_total()
+        consumo_gasto_total(sumatoria_consumo, sumatoria_costo)
     elif opcion_menu == "4":
         break
     else:
